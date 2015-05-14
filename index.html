@@ -1,1 +1,189 @@
-Hello World
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <style>
+      .top { margin-top: 50px; }
+      .me { margin-bottom: 40px; }
+      .blue-bg { background-color: rgba(34, 152, 189, 0.7); }
+      .white { color: white; }
+      .centered { text-align: center; }
+      .desc { width: 500px; margin: 0px auto; }
+      img.centered {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .noline:hover {
+        text-decoration: none;
+        outline: none;
+        border: 0px none transparent;
+      }
+    </style>
+  </head>
+  <body class="blue-bg">
+    <div class="row">
+      <div class="col-md-offset-4 col-md-4">
+        <div class="centered">
+          <h1 class="top me">Benjamin Englard<h1>
+          <img class="img-responsive centered me" src="https://media.licdn.com/mpr/mpr/shrink_200_200/p/8/005/01b/26a/08e7fed.jpg" width="150px" height="150px">
+          <p class="me">
+            <a target="_blank" href="mailto:benjienglard@yahoo.com" class="white noline">
+              <span class="fa fa-envelope-o"></span>
+            </a>
+            <a target="_blank" href="https://www.facebook.com/benglard" class="white noline">
+              <span class="fa fa-facebook-square"></span>
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/benglard" class="white noline">
+              <span class="fa fa-linkedin-square"></span>
+            </a>
+            <a target="_blank" href="https://github.com/benglard" class="white noline">
+              <span class="fa fa-github-square"></span>
+            </a>
+            <a target="_blank" href="https://twitter.com/benglard" class="white noline">
+              <span class="fa fa-twitter-square"></span>
+            </a>
+          </p>
+        </div>
+        <div class="panel-group" id="panels" role="tablist">
+          <div class="panel panel-success">
+            <div class="panel-heading">
+              <h3 class="panel-title centered">
+                <a class="collapsed" data-toggle="collapse" data-parent="#panels" href="#work">Work</a>
+              </h3>
+            </div>
+            <div id="work" class="panel-collapse collapse">
+              <div class="list-group">
+                <a target="_blank" href="https://www.mytepd.com/" class="list-group-item">
+                  <h4 class="list-group-item-heading">MyTE</h4>
+                  <p class="list-group-item-text">
+                    MyTE is building novel training tools for (initially) K-5 math teachers, based on a combination of the best traditional content and interactions, superpowered by innovative virtual classroom software that allows for practice of the authentic work of teaching.
+                    <br><br>
+                    For MyTE I have built and deployed novel and potentially patentable dialogue systems, browser based graphics and simulation systems, and content management systems.
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-success">
+            <div class="panel-heading">
+              <h3 class="panel-title centered">
+                <a class="collapsed" data-toggle="collapse" data-parent="#panels" href="#research">Research</a>
+              </h3>
+            </div>
+            <div id="research" class="panel-collapse collapse">
+              <div class="list-group">
+                <li class="list-group-item">
+                  <b>My main research interest at this time is:</b> novel uses of/architectures for neural networks, with applications to natural language processing and computer vision. I am specifically interested in recurrent models of vision/trainable memory models.
+                  <br><br>
+                  <b>Relevant work:</b>
+                  <ul>
+                    <li>
+                      <a target="_blank" href="https://github.com/benglard/symtorch">symtorch</a> - a graph computation library, capable of easy expression of neural nets.<br>
+                      <a target="_blank" href="https://github.com/benglard/symnn">symnn</a> - a neural network library built on top of symtorch.
+                    </li>
+                    <li>
+                      <a target="_blank" href="https://github.com/benglard/Inveling">Inveling</a> - I trained a LSTM-convnet (encoder-decoder) neural network architecture to map text input into image output. In the process, I built a neural network library on top of theano.
+                    </li>
+                    <li>
+                      <a target="_blank" href="https://github.com/benglard/TreeHacks">gcc-nn</a> - I (attempted) to train a recurrent neural network to be a C compiler.
+                    </li>
+                    <li>
+                      <a target="_blank" href="https://github.com/benglard/vidAIo">vidAIo</a> - set of natural language processing and computer vision technologies that allow for search within both the audio and frame content of a video.
+                    </li>
+                    <li>
+                      <a target="_blank" href="https://github.com/benglard/ConvNetPy">ConvNetPy</a> - neural nets in Python<br>
+                      <a target="_blank" href="https://github.com/benglard/RustyNet">RustyNet</a> - neural nets in Rust
+                    </li>
+                  </ul>
+                </li>
+                <li class="list-group-item">
+                  <b>Florida International University High Performance Database Research Center</b> - Designed and implemented a Spatial Autocorrelation system, the first prototype of what will eventually become the TerraFly Spatial Analysis toolset.</p>
+                </li>
+                <li class="list-group-item">
+                  <b>University of Florida Advanced Computing and Information Systems Laboratory</b> - Designed, implemented, unittested, and simulated the message recovery system for a Peer-to-Peer alternative to Twitter, Litter. Worked remotely updating the Litter web interface.
+                </li>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-success">
+            <div class="panel-heading">
+              <h3 class="panel-title centered">
+                <a class="collapsed" data-toggle="collapse" data-parent="#panels" href="#projects">Recent Projects &amp; Software</a>
+              </h3>
+            </div>
+            <div id="projects" class="panel-collapse collapse">
+              <div class="list-group">
+                <a target="_blank" href="https://github.com/benglard/luaimport" class="list-group-item">
+                  <h4 class="list-group-item-heading">luaimport</h4>
+                  <p class="list-group-item-text">Easy imports/packages for Lua</p>
+                </a>
+                <a target="_blank" href="https://github.com/benglard/luaclass" class="list-group-item">
+                  <h4 class="list-group-item-heading">luaclass</h4>
+                  <p class="list-group-item-text">Easy Classes for Lua</p>
+                </a>
+                <a target="_blank" href="https://github.com/benglard/waffle" class="list-group-item">
+                  <h4 class="list-group-item-heading">waffle</h4>
+                  <p class="list-group-item-text">Tiny, fast, asynchronous web framework for Lua/Torch</p>
+                </a>
+                <a target="_blank" href="https://github.com/benglard/pthreads-ffi" class="list-group-item">
+                  <h4 class="list-group-item-heading">pthreads-ffi</h4>
+                  <p class="list-group-item-text">LuaJIT threading system based on C pthreads</p>
+                </a>
+                <a target="_blank" href="https://github.com/benglard/HTMLisp" class="list-group-item">
+                  <h4 class="list-group-item-heading">HTMLisp</h4>
+                  <p class="list-group-item-text">Lisp-inspired HTML templater</p>
+                </a>
+                <a target="_blank" href="https://github.com/benglard/artery" class="list-group-item">
+                  <h4 class="list-group-item-heading">artery</h4>
+                  <p class="list-group-item-text">A Rich Text Editor (in) React Yo</p>
+                </a>
+                <a target="_blank" href="https://github.com/benglard/cARdboard" class="list-group-item">
+                  <h4 class="list-group-item-heading">cARdboard</h4>
+                  <p class="list-group-item-text">Cheap AR Device</p>
+                </a>
+                <a target="_blank" href="https://github.com/benglard/Augment" class="list-group-item">
+                  <h4 class="list-group-item-heading">Augment</h4>
+                  <p class="list-group-item-text">Image processing based link retrieval and augmented reality system</p>
+                </a>
+                <a target="_blank" href="https://github.com/benglard/RGBDB" class="list-group-item">
+                  <h4 class="list-group-item-heading">RGBDB</h4>
+                  <p class="list-group-item-text">RGBD videos in the browser</p>
+                </a>
+                <a target="_blank" href="https://www.youtube.com/watch?v=Tg9FmZpKKZE" class="list-group-item">
+                  <h4 class="list-group-item-heading">Paradigm</h4>
+                  <p class="list-group-item-text">Mobile Distributed Computing</p>
+                </a>
+                <a target="_blank" href="https://www.youtube.com/watch?v=nHVDea0vYwY" class="list-group-item">
+                  <h4 class="list-group-item-heading">Know</h4>
+                  <p class="list-group-item-text">Natural Language Processing for personality trait discovery and ad-hoc recommendation system</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-success">
+            <div class="panel-heading">
+              <h3 class="panel-title centered">
+                <a class="collapsed" data-toggle="collapse" data-parent="#panels" href="#interests">Interests</a>
+              </h3>
+            </div>
+            <div id="interests" class="panel-collapse collapse">
+              <div class="list-group">
+                <li class="list-group-item">Artificial Intelligence (natural language processing, computer vision, robotics)</li>
+                <li class="list-group-item">Programming Languages</li>
+                <li class="list-group-item">Computer graphics/virtual reality</li>
+                <li class="list-group-item">Neuroscience/psychology</li>
+                <li class="list-group-item">Quantum Physics</li>
+                <li class="list-group-item">Basketball/Football</li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
